@@ -1,0 +1,13 @@
+#Project Proposal
+
+##Freshman Plague
+###An Epidemiological Story
+Starring: Matthew Ruehle, Sean Carter, and Gabriel Butterick
+
+##Abstract
+We plan to investigate infectious disease spread through a network of socially and spacially connected nodes. The nodes will be agents, in so much as they will interact and maintain randomly generated, unique characteristics. We want to examine the way characteristics affect the spread of disease, what characteristics contribute to contracting disease, and what distributions of characteristics lead to the population being all sick or all well by the end.
+
+##Deliverables
+We want to have a network diagram represent the state of the system at the beginning and end of the system in an effort to show the effect of social connection on disease spread.
+We want to represent the intermediate period of the model running via animating a cellular automata based off the social network.
+We want to show trends in characteristics over time, rate of sickness growth dependent on characteristic concentration, and any other important traits.
