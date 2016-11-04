@@ -37,3 +37,5 @@ Using the Hui paper and its model for simulating the diffusion of information, w
 
 ##Learning Goals
 Matt: I'd like to learn about simulating networks, and about using models in a concrete, explanatory/predictive context. If I could pick up a bit about efficient computational modeling, that would be cool too.
+
+Gabe: My main learning goal is to explore the boundaries of reasonable cellular automata. How complicated can we make the model while still having it function quickly? I also want to become more familiar with complex cellular automata and how they work. I'd like to learn more about model efficiency diagnostic methods, for future use in making sure the models I'm involved are effective.
