@@ -39,3 +39,5 @@ Using the Hui paper and its model for simulating the diffusion of information, w
 Matt: I'd like to learn about simulating networks, and about using models in a concrete, explanatory/predictive context. If I could pick up a bit about efficient computational modeling, that would be cool too.
 
 Gabe: My main learning goal is to explore the boundaries of reasonable cellular automata. How complicated can we make the model while still having it function quickly? I also want to become more familiar with complex cellular automata and how they work. I'd like to learn more about model efficiency diagnostic methods, for future use in making sure the models I'm involved are effective.
+
+Sean: To me, the most important thing is learning to impliment a reasonable model in Python without the guidance of the textbook. I also want to make pretty graphs (i.e. learn more about visualization), and it seems like this project will offer a pretty big coding challenge. There are also many different factors in the results of a disease model that are important, which means that there is a lot of room to create an interesting visualization.
