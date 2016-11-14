@@ -38,17 +38,10 @@ def create_student_ba_graph(size=90, new_edges_per_node=3):
 		G.add_node(new_student)
 
 		all_students = range(len(students_list))
-		probs_base = [k[1]+1 for k in students_list]
-		probs = np.linalg.norm(probs_base)
-		print "ahere"
+		probs_base = [float(k[1]+1) for k in students_list]
+		probs = probs_base/np.sum(probs_base)
 		number_of_friends = min(len(students_list), new_edges_per_node)
-		print "bhere"
-		print probs
-		print all_students
-		print number_of_friends
-		print "---"
 		new_friends = np.random.choice(all_students, size=number_of_friends, replace=False, p=probs)
-		print "here"
 		for friend in new_friends:
 			students_list[friend][1] += 1
 			G.add_edge(new_student, students_list[friend][0])
