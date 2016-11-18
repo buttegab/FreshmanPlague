@@ -45,8 +45,9 @@ Methodology: We generated a BA graph based on the model from chapter 4 in ThinkC
 After this, we implemented another function that would set edges between pairs of nodes to a maximum social bond at random (to simulate random roomate assignment in freshman year), and compared the results obtained from otherwise random graphs.
 
 Results: 
-![Peak sick nodes, no-roommates.](imgs/many_iter_NR.png)
-![Peak sick nodes, with roommates.](imgs/many_iter_R.png)
+
+![Peak sick nodes](imgs/max_infected_cdf.png)
+![Average sick nodes](imgs/average_infected_cdf.png)
 ![Single run, without roommates.](imgs/single_iter_NR.png)
 ![Single run, with roommates.](imgs/single_iter_R.png)
 
