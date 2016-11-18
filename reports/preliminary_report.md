@@ -36,17 +36,31 @@ An agent-based model provides a reasonable approximation of infectious diseases'
 2. Using the Hui paper and its model for simulating the diffusion of information, we could generate a basic model for disease transmission. The proposed model in the paper uses strength of connections, or "trust", to determine how fast information spreads. If we took that connection model and changed it to disease transmission, we would have disease spreading better accross some connections than others. We would use this to simulate roomate pairs or strong friendships to demonstrate the increased contact between those agents and the increased likelihood of disease transmission. We want to have a network diagram represent the state of the system at the beginning and end of the system in an effort to show the effect of social connection on disease spread. We want to represent the intermediate period of the model running via animating a cellular automata based off the social network. We want to show trends in characteristics over time, rate of sickness growth dependent on characteristic concentration, and any other important traits.
 
 ##Experiments Performed
-1. We began to impliment the first experiment by creating a Barabási–Albert graph with randomly varying the strength of the connections between nodes - this was to simulate the environment that a desease spreads in. While implimenting this, we realized that having roomates as very strong bonds could change how quickly disease spreads. 
+1. We began to implement the first experiment by creating a Barabási–Albert graph with randomly varying the strength of the connections between nodes - this was to simulate the environment that a desease spreads in. While implimenting this, we realized that having roomates as very strong bonds could change how quickly disease spreads. 
 
 Question: How does adding very strong random roomate edges to a BA graph change the speed with which disease propogates through our network, and how does this change the maximum number of people that become infected?
 
 Methodology: We generated a BA graph based on the model from chapter 4 in ThinkComplexity. We modified it so that each node is a students object, with an ability to spread disease, an ability to resist disease, and a state (healthy, infected, or immune). We decided that infectio should be spread by prolonged exposure - each timestep, a person can be given infection by nearby nodes that are infected, untill they pass a threshold that lables them as infected as well.
 
-After this, we implimented another function that would set edges between pairs of nodes to a maximum social bond at random (to simulate random roomate assignment in freshman year), and compared the results obtained from otherwise random graphs.
+After this, we implemented another function that would set edges between pairs of nodes to a maximum social bond at random (to simulate random roomate assignment in freshman year), and compared the results obtained from otherwise random graphs.
 
-Results: To be inserted
+Results: 
+![Peak sick nodes, no-roommates.][many_iter_NR.png]
+![Peak sick nodes, with roommates.][many_iter_R.png]
+![Single run, without roommates.][single_iter_NR.png]
+![Single run, with roommates.][single_iter_R.png]
 
-Interpretation: To be inserted, preferably after finding good graphs
+Interpretation: As one might expect, both the total and peak number of infected nodes is greater in the graph with roommates. This can be partly attributed to just the exposure of the roommate - but, moreso the "small world" effect of ties between random nodes in a BA graph - increasing the odds of an early infection reaching a "popular" node.
+
+2. For an additional experiment, we hope to look at the impacts of quarantining - coupled with a more infectious (and ideally, more realistic) virus. For example - if, once the disease displays symptoms, infections drop - but, we divide the disease into an asymptomatic-infectious and symptomatic-infectious stage, like what is observed in nature, then quarantining those with symptoms could conceivably provide a more realistic model.
+
+Question: How does the spread of an infectious agent through a network change as a result of quarantining "sick" nodes, after an infectious-but-invisible stage?
+
+Methodology: We will generate a social BA graph (likely, with roommate pairs), and then infect a random agent. The disease will now have two "thresholds" - an exposure, until the disease is communicable, and a timer, until the disease is visible (after reaching the exposure threshold).
+
+Interpretation: We will compare the rate of infection, the total number of infected nodes, and the peak infection for an environment with and without quarantine, as well as for a "weak" quarantine (e.g., reduced--but not eliminated--interaction between symptomatic and healthy nodes).
+
+3. As an additional measure for our project, we plan to alter the infectious "step" and the agent parameters (as well as the BA graph generation) to produce a more realistic representation of infection in a social network. This will likely involve trying to make the agents more realistic, and the behavior of the disease more biologically accurate - e.g., by adding in more triangles and complete subgraphs in generation, and more closely imitating the observed behavior of viruses in general.
 
 ##Learning Goals
 Matt: I'd like to learn about simulating networks, and about using models in a concrete, explanatory/predictive context. If I could pick up a bit about efficient computational modeling, that would be cool too.
