@@ -46,8 +46,13 @@ After this, we implemented another function that would set edges between pairs o
 
 Results: 
 
+Ovserved trends over 100 runs:
+
 ![Peak sick nodes](imgs/max_infected_cdf.png)
 ![Average sick nodes](imgs/average_infected_cdf.png)
+
+Infection durring a single run:
+
 ![Single run, without roommates.](imgs/single_iter_NR.png)
 ![Single run, with roommates.](imgs/single_iter_R.png)
 
