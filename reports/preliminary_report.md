@@ -45,10 +45,10 @@ Methodology: We generated a BA graph based on the model from chapter 4 in ThinkC
 After this, we implemented another function that would set edges between pairs of nodes to a maximum social bond at random (to simulate random roomate assignment in freshman year), and compared the results obtained from otherwise random graphs.
 
 Results: 
-![Peak sick nodes, no-roommates.][many_iter_NR.png]
-![Peak sick nodes, with roommates.][many_iter_R.png]
-![Single run, without roommates.][single_iter_NR.png]
-![Single run, with roommates.][single_iter_R.png]
+![Peak sick nodes, no-roommates.](imgs/many_iter_NR.png)
+![Peak sick nodes, with roommates.](imgs/many_iter_R.png)
+![Single run, without roommates.](imgs/single_iter_NR.png)
+![Single run, with roommates.](imgs/single_iter_R.png)
 
 Interpretation: As one might expect, both the total and peak number of infected nodes is greater in the graph with roommates. This can be partly attributed to just the exposure of the roommate - but, moreso the "small world" effect of ties between random nodes in a BA graph - increasing the odds of an early infection reaching a "popular" node.
 
