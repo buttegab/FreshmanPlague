@@ -24,11 +24,11 @@ Results:
 
 Observed trends over 100 runs:
 
-![Peak sick nodes](imgs/max_infected_cdf.png)
+![Peak sick nodes](imgs/roommates_max_cdf.png)
 
 _Fig. 1 - a CDF of the peak sick nodes. The maximal sick node count is right-shifted in the model with roommate pairs._
 
-![Average sick nodes](imgs/average_infected_cdf.png)
+![Average sick nodes](imgs/roommates_avg_cdf.png)
 
 _Fig. 2 - a CDF of the mean sick nodes over time, displaying similar trends to those in Fig. 1._
 
@@ -48,18 +48,22 @@ Methodology: By looking into the dynamics behind the real-world disease measles 
 
 Results:
 'Measles' vs 'Non-measles' infection dynamic, one run:
+
 ![Single run, measles infectious step](imgs/measles_onerun_numsick_overtime.png)
 
 _Fig. 4 - infected nodes over time for a single run of the model, using a "measles" infectious step._
+
 ![Single run, standard infectious step](imgs/notmeasles_onerun_numsick_overtime.png)
 
 _Fig. 5 - infected nodes over time for a single run of the model, using an infectious step which does not vary as time passes since infection._
-![CDF, standard vs. measles infectious steps](imgs/Measles_Avg_CDF.png)
 
-_Fig. 6 - a CDF comparing sick nodes for measles and non-measles infectious steps. There is a larger "middle" (suggesting lower variance) with the measles step, as well as reliably higher means._
+![CDF, standard vs. measles infectious steps](imgs/measles_avg_cdf.png)
+
+_Fig. 6 - a CDF comparing sick nodes for measles and non-measles infectious steps. There is a larger "middle" (suggesting lower variance about this median); note the log scale) with the measles step, as well as reliably higher means_
 
 
 Quarantine strength, one run:
+
 ![No self-quarantine](imgs/no_sq.png)
 ![Partial self-quarantine](imgs/some_sq.png)
 ![Perfect self-quarantine](imgs/all_sq.png)
@@ -67,6 +71,7 @@ Quarantine strength, one run:
 _Fig. 7 - infected nodes over time for one run of the model, with varying quarantine strengths._
 
 Quarantine strength, CDF of 100 runs:
+
 _TODO, possibly as an expansion on the project._
 
 Interpretation: Increasing the virulence of the disease, as expected, also sharply increases both the peak and the mean number of infected nodes. We further observed that the strength of the self-imposed quarantine plays a significant role - as one would expect - in how quickly the disease manages to spread.
