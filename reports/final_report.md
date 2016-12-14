@@ -70,11 +70,9 @@ Quarantine strength, one run:
 
 _Fig. 7 - infected nodes over time for one run of the model, with varying quarantine strengths._
 
-Quarantine strength, CDF of 100 runs:
 
-_TODO, possibly as an expansion on the project._
 
-Interpretation: Increasing the virulence of the disease, as expected, also sharply increases both the peak and the mean number of infected nodes. We further observed that the strength of the self-imposed quarantine plays a significant role - as one would expect - in how quickly the disease manages to spread.
+Interpretation: Increasing the virulence of the disease, as expected, also sharply increases both the peak and the mean number of infected nodes. We further observed that the strength of the self-imposed quarantine plays a significant role - as one would expect - in how quickly the disease manages to spread. In figure 6 we demonstrate the reproucibility of our results on a number of different BA graphs, though we did notice a sort of critical point around 0.4 on the CDF where the average infected spiked suddenly.
 We speculate that part of the virulence of the "Freshman Plague" in particular can be attributed to the weakness of students' self-quarantines, especially in their first year. A strong or perfect quarantine, after all, leads to diseases which "die out" after just a few steps; unfortunately, a plethora of obligations (meeting new people, joining new activities, and coursework) keep even particularly sick students from achieving an effective self-imposed quarantine; this could explain some of why the plague also appears to manifest itself chiefly in the new class each year.
 
 
