@@ -22,15 +22,19 @@ We then generate another graph that has its edges set between random pairs of no
 
 Results:
 
-Ovserved trends over 100 runs:
+Observed trends over 100 runs:
 
 ![Peak sick nodes](imgs/max_infected_cdf.png)
-![Average sick nodes](imgs/average_infected_cdf.png)
+_Fig. 1 - a CDF of the peak sick nodes. The maximal sick node count is right-shifted in the model with roommate pairs._
 
-Infection durring a single run:
+![Average sick nodes](imgs/average_infected_cdf.png)
+_Fig. 2 - a CDF of the mean sick nodes over time, displaying similar trends to those in Fig. 1._
+
+Infection during a single run:
 
 ![Single run, without roommates.](imgs/single_iter_NR.png)
 ![Single run, with roommates.](imgs/single_iter_R.png)
+_Fig. 3 - a comparison of one run of the model, with and without roommates. The with-roommate run has a longer disease lifespan, with more nodes infected._
 
 Interpretation: Both the total and peak number of infected nodes are greater in the graph with roommates. This can be partly attributed to the larger exposure level to the roommate - but, moreso the "small world" effect of ties between random nodes in a BA graph - increasing the odds of an early infection reaching a "popular" node.
 
@@ -42,15 +46,21 @@ Methodology: By looking into the dynamics behind the real-world disease measles 
 Results:
 'Measles' vs 'Non-measles' infection dynamic, one run:
 ![Single run, measles infectious step](imgs/measles_onerun_numsick_overtime.png)
+_Fig. 4 - infected nodes over time for a single run of the model, using a "measles" infectious step._
 ![Single run, standard infectious step](imgs/notmeasles_onerun_numsick_overtime.png)
+_Fig. 5 - infected nodes over time for a single run of the model, using an infectious step which does not vary as time passes since infection._
+![CDF, standard vs. measles infectious steps](imgs/Measles_Avg_CDF.png)
+_Fig. 6 - a CDF comparing sick nodes for measles and non-measles infectious steps. There is a larger "middle" (suggesting lower variance) with the measles step, as well as reliably higher means._
+
 
 Quarantine strength, one run:
 ![No self-quarantine](imgs/no_sq.png)
 ![Partial self-quarantine](imgs/some_sq.png)
 ![Perfect self-quarantine](imgs/all_sq.png)
+_Fig. 7 - infected nodes over time for one run of the model, with varying quarantine strengths._
 
 Quarantine strength, CDF of 100 runs:
-_TODO. Will run and put here by the final report._
+_TODO, possibly as an expansion on the project._
 
 Interpretation: Increasing the virulence of the disease, as expected, also sharply increases both the peak and the mean number of infected nodes. We further observed that the strength of the self-imposed quarantine plays a significant role - as one would expect - in how quickly the disease manages to spread.
 We speculate that part of the virulence of the "Freshman Plague" in particular can be attributed to the weakness of students' self-quarantines, especially in their first year. A strong or perfect quarantine, after all, leads to diseases which "die out" after just a few steps; unfortunately, a plethora of obligations (meeting new people, joining new activities, and coursework) keep even particularly sick students from achieving an effective self-imposed quarantine; this could explain some of why the plague also appears to manifest itself chiefly in the new class each year.
