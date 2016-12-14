@@ -25,15 +25,18 @@ Results:
 Observed trends over 100 runs:
 
 ![Peak sick nodes](imgs/max_infected_cdf.png)
+
 _Fig. 1 - a CDF of the peak sick nodes. The maximal sick node count is right-shifted in the model with roommate pairs._
 
 ![Average sick nodes](imgs/average_infected_cdf.png)
+
 _Fig. 2 - a CDF of the mean sick nodes over time, displaying similar trends to those in Fig. 1._
 
 Infection during a single run:
 
 ![Single run, without roommates.](imgs/single_iter_NR.png)
 ![Single run, with roommates.](imgs/single_iter_R.png)
+
 _Fig. 3 - a comparison of one run of the model, with and without roommates. The with-roommate run has a longer disease lifespan, with more nodes infected._
 
 Interpretation: Both the total and peak number of infected nodes are greater in the graph with roommates. This can be partly attributed to the larger exposure level to the roommate - but, moreso the "small world" effect of ties between random nodes in a BA graph - increasing the odds of an early infection reaching a "popular" node.
@@ -46,10 +49,13 @@ Methodology: By looking into the dynamics behind the real-world disease measles 
 Results:
 'Measles' vs 'Non-measles' infection dynamic, one run:
 ![Single run, measles infectious step](imgs/measles_onerun_numsick_overtime.png)
+
 _Fig. 4 - infected nodes over time for a single run of the model, using a "measles" infectious step._
 ![Single run, standard infectious step](imgs/notmeasles_onerun_numsick_overtime.png)
+
 _Fig. 5 - infected nodes over time for a single run of the model, using an infectious step which does not vary as time passes since infection._
 ![CDF, standard vs. measles infectious steps](imgs/Measles_Avg_CDF.png)
+
 _Fig. 6 - a CDF comparing sick nodes for measles and non-measles infectious steps. There is a larger "middle" (suggesting lower variance) with the measles step, as well as reliably higher means._
 
 
@@ -57,6 +63,7 @@ Quarantine strength, one run:
 ![No self-quarantine](imgs/no_sq.png)
 ![Partial self-quarantine](imgs/some_sq.png)
 ![Perfect self-quarantine](imgs/all_sq.png)
+
 _Fig. 7 - infected nodes over time for one run of the model, with varying quarantine strengths._
 
 Quarantine strength, CDF of 100 runs:
